@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add the Tailwind CSS CDN link below -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Youtube Timeline Saver</title>
+</head>
+
+<body>
+    <br>
+    <h2 class="font-bold text-3xl text-center text-white">Youtube Timeline</h2>
+    <p class="font-semibold text-lg text-center text-white">Never lose your timeline again!</p>
+    <br>
+
+    <section>
+        <p class="font-semibold text-lg text-center text-white mb-1">Timeline</p>
+        <div class="text-center">
+            <input class="mcq_option_input text-lg" type="text" id="timelineInput"
+                placeholder="Enter your timeline eg. 1:30">
+        </div>
+        <br>
+        <div class="text-center">
+            <a id="saveTimeline"
+                class="mr-2 inline-flex items-center justify-center px-3 py-2 text-base font-medium text-center text-indigo-100 border border-indigo-500 rounded-lg shadow-sm cursor-pointer hover:text-white bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500">
+                <img src="/images/save.png" width="23%" />
+                <span class="relative ml-1">Save</span>
+            </a>
+
+            <a id="clearData"
+                class="mr-2 inline-flex items-center justify-center px-3 py-2 text-base font-medium text-center text-indigo-100 border border-indigo-500 rounded-lg shadow-sm cursor-pointer hover:text-white bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500">
+                <img src="/images/clear.svg" width="30%" />
+                <span class="relative ml-1">Clear</span>
+            </a>
+        </div>
+        <br>
+        <ul id="timelineList"></ul>
+    </section>
+</body>
+
+</html>

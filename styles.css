@@ -1,0 +1,35 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between items */
+}
+
+li {
+  text-decoration: underline;
+  padding: 8px;
+  transition: background-color 0.3s;
+  color: rgb(255 255 255);
+  font-weight: 500;
+  font-size: medium;
+  flex: 1 0 48%; /* Allow two items on one row */
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: #4a5568; /* Change background color on hover */
+}
+
+body {
+  width: 300px;
+  height: 250px;
+  background-color: #292a2d;
+}
+
+.mcq_option_input {
+  border: white solid 2px;
+  border-radius: 10px;
+  background: transparent;
+  width: 85%;
+  color: white;
+  padding-left: 20px;
+}
